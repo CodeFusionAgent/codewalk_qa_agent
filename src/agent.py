@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 from a2a.server.tasks import TaskUpdater
-from a2a.types import Message, TaskState, Part, TextPart
+from a2a.types import Message, TaskState, Part, TextPart, DataPart
 from a2a.utils import get_message_text, new_agent_text_message
 from google import genai
 
@@ -35,6 +35,6 @@ class Agent:
             contents=input_text,
         )
         await updater.add_artifact(
-            parts=[Part(root=TextPart(text=response.text))],
+            parts=[Part(root=DataPart(data={"argument": response.text}, kind="data"))],
             name="Response",
         )
