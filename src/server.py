@@ -21,16 +21,16 @@ def main():
     args = parser.parse_args()
 
     skill = AgentSkill(
-        id="debate",
-        name="Debate",
-        description="Engage in structured debates on various topics",
-        tags=["discussion", "debate"],
-        examples=["Let's debate the merits of renewable energy", "Argue for and against artificial intelligence"]
+        id="answer_codebase_question",
+        name="Answer Codebase Question",
+        description="Answer questions about codebases",
+        tags=["qa", "codebase"],
+        examples=["How does request processing work in FastAPI?"]
     )
 
     agent_card = AgentCard(
-        name="Debate Agent",
-        description="An agent that can engage in structured debates",
+        name="Codewalk Q&A Agent",
+        description="Answer questions about codebases using YAML knowledge base or LLM",
         url=args.card_url or f"http://{args.host}:{args.port}/",
         version='1.0.0',
         default_input_modes=['text'],
