@@ -2,6 +2,8 @@
 
 A baseline Purple Agent that answers technical questions about open-source codebases. Built for the [AgentBeats](https://agentbeats.dev) platform using the [A2A (Agent-to-Agent)](https://a2a-protocol.org/latest/) protocol.
 
+**Registered Agent:** [codewalk-qa-agent on AgentBeats](https://agentbeats.dev/anamsarfraz/codewalk-qa-agent)
+
 ## Overview
 
 This agent serves as the baseline Q&A agent for the Codewalk benchmark. When given a question about a codebase, it either:
@@ -125,6 +127,14 @@ Push to `main` to publish `latest` tag, or create a version tag (e.g., `v1.0.0`)
 ghcr.io/<your-username>/codewalk_qa_agent:latest
 ghcr.io/<your-username>/codewalk_qa_agent:1.0.0
 ```
+
+## Agent Registration
+
+To register your own Purple Agent on AgentBeats:
+
+1. Follow the [AgentBeats Tutorial](https://docs.agentbeats.dev/tutorial/) for step-by-step setup
+2. Build and publish your Docker image to a container registry
+3. Register the agent on the [AgentBeats platform](https://agentbeats.dev)
 
 ## Related Repositories
 
