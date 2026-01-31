@@ -21,7 +21,7 @@ pyproject.toml    # Python dependencies
 
 ## Getting Started
 
-1. **Create your repository** - Click "Use this template" to create your own repository from this template
+1. **Create your repository** - Click "Use this template" to create your own repository from [this](https://github.com/RDI-Foundation/agent-template) template
 
 2. **Implement your agent** - Add your agent logic to [`src/agent.py`](src/agent.py)
 
